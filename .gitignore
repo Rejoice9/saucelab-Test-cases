@@ -1,0 +1,12 @@
+# Node dependencies
+node_modules/
+
+# Cypress output
+cypress/videos/
+cypress/screenshots/
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
