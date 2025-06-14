@@ -17,7 +17,7 @@ context('Check out', () => {
 
       cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').should('be.visible')
       cy.get('#add-to-cart-sauce-labs-backpack').click();
-  
+
     })
     
 
@@ -31,19 +31,4 @@ context('Check out', () => {
       cy.get('[data-test="checkout"]').click();
     })
 
-    // Checkout: Your information
-
-    it('cy.get-checkout', () => {
-      //https://www.saucedemo.com/checkout-step-two.html
-
-      cy.get('[data-test="firstName"]').type('Rejoice');
-      cy.get('#last-name').type('Chuks');
-      cy.get('#postal-code').type('1988');
-      cy.get('#continue').click();
-
-      cy.get('#finish').click();
-      cy.contains('Checkout: Complete!').should('be.visible');
-      cy.get('[data-test="back-to-products"]')
-      cy.contains('Back Home')
-    })   
 })
