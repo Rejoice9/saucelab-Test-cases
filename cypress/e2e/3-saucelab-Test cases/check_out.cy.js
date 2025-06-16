@@ -30,5 +30,4 @@ context('Check out', () => {
       cy.get('[data-test="checkout"]').should('be.visible');
       cy.get('[data-test="checkout"]').click();
     })
-
 })
