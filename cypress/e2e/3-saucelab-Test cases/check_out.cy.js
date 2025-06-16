@@ -29,6 +29,9 @@ context('Check out', () => {
       cy.get('[class="inventory_item_name"]').should('be.visible');
       cy.get('[data-test="checkout"]').should('be.visible');
       cy.get('[data-test="checkout"]').click();
-    })
 
+      // Events
+     cy.get('.inventory_item_name').should('be.visible');
+      cy.get('.inventory_item_desc').should('be.visible');
+    })
 })

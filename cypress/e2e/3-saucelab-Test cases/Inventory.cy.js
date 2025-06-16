@@ -141,7 +141,6 @@ it.only('About Page', () => {
       .and('have.attr', 'href')
       .and('include', 'saucelabs.com')
   })
-
 })
 
 
